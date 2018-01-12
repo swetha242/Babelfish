@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FAQs</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<style>
+		
+		h3{color:#ff8d1e}
+		
+		.ans{color:grey}
+	div.q{position:relative;top:5em;left:10em;}
+	input[type=button]{float:right;}
+	 .faq { cursor:hand; cursor:pointer;background-color:#bbddff;padding-left:1em;
+        border:1px solid #1e90ff; width:50%; }
+ .faa { display:none; }
+		</style>
+	</head>
+	<body id="faq">
+		<ul class="tabs1">
+	<li><a href="home.html">Log out</a></li>
+	<li><a href="dashboard.html">Go back</a></li>
+	
+	<li class="ti"><img src='babel.png'alt='nemo'/><img src="logo1.png" alt ="logo"></li>
+</ul>
+	<div class='q'>
+	<div class="faq" onclick="fn('a1')">
+	<p>1)What is babelfish?</p>
+	<div class='faa' id="a1">
+	<p class='ans'>Babelfish is one of the largest online learning platforms for Spanish. 
+		Babelfish's adaptive experience has gamified elements to make the learning of Spanish more fun and effective.
+		100 million students are learning a language with Babelfish.</p>
+	</div>
+	</div>
+	<div class="faq" onclick="fn('a2')">
+	<p>2)How much does Babelfish cost?</p>
+	<div class='faa' id="a2">
+	<p class='ans'>Learning Spanish with Babelfish is absolutely 
+		free of cost. However, if you want to expand your learning beyond the first level 
+		to higher levels, we'd suggest you have a look at our payment packages-and avail a lot of discounts too!</p>
+	</div>
+	</div>
+	<div class="faq"  onclick="fn('a3')">
+	<p>3)Is my information safe?</p>
+	<div class='faa' id="a3">
+	<p class='ans'>When you create a Babelfish account, you choose a username and provclasse us with an email address,
+		which is not public. The username/name you chose can be seen by other users of Babelfish. 
+		We do not sell or share personal account information with third parties.</p>
+	</div>
+	</div>
+	<div class="faq"  onclick="fn('a4')">
+	<p>4)Why choose Babelfish?</p>
+	<div class='faa' id="a4">
+	<p class='ans'>In Babelfish, we guarantee that all lessons are tailored specifically to meet the requirements of 
+		the Spanish language. The way an English speaker learns Spanish, for example, is different than the way
+		an Italian speaker learns it. This way our customers benefit from useful content with a maximum learning effect.</p>
+	</div>
+	</div>
+	<div class="faq"  onclick="fn('a6')">
+	<p>5)What is the teaching method?</p>
+	<div class='faa' id="a6">
+	<p class='ans'>Babelfish is a self-study platform and there are no teachers, instead you learn from our 
+		self-study exercises and from other members of the community. Each course contains sets of 
+		lessons designed around a particular topic (for example: introducing yourself). The focus of each 
+		exercise within a lesson is to give you something new (usually a word or a phrase) that you can use 
+		immediately in writing or conversation.You are updated about your progress at each level.</p>
+	</div>
+	</div>
+	<div class="faq"  onclick="fn('a7')">
+	<p>6)How do I use Babelfish?</p>
+	<div class='faa' id="a7">
+	<p class='ans'>A lesson consists of three levels-one, exercise, which is basically a set of flashcards containing 
+		important phrases or sentences pertaining to that lesson(e.g about me). The second, a quiz, which tests how 
+		much you have learnt. And, finally, after all lessons, there is also a final quiz with mixed varieties of questions 
+		to track your progress.</p>
+	</div>
+	</div>	
+	<div class="faq"  onclick="fn('a8')">
+	<p>7)How do I login?</p>
+	<div class='faa' id="a8">
+	<p class='ans'>Click the "Log in" button. Enter your email and password combination. You'll be redirected to your
+		dashboard where you'll be able to see your progress and continue learning where you left off. If you are 
+		a new user, please sign up, and enter all required details.</p>
+	</div>
+	</div>
+	
+	</div>
+	<script>
+	function fn(Info) {
+  var CState = document.getElementById(Info);
+  CState.style.display = (CState.style.display != 'block')
+                       ? 'block' : 'none';
+}
+	</script>
+</body>
+</html>

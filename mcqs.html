@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<style>
+		h3,h4{
+    text-shadow: 3px 3px 5px #99ccff;
+	color:#00264d;
+	font-style:italic;
+}
+		</style>
+	</head>
+	<body id="mcq">
+	<ul class="tabs1">
+	<li><a href="dashboard.html">Dashboard</a></li>
+	<li><a href="home.html">Logout</a></li>
+	<li class="ti"><img src='babel.png'alt='nemo'/><img src="logo1.png" alt ="logo"></li>
+	</ul>
+<div class="q2div">
+
+<div class="q2" id="q1">
+</br>
+	<div id="myProgress3">
+	<div id="myBar3"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div>	
+	<a href='#' onclick="fn('D','q1','r1')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br></br>
+	<center><FORM method="POST" align='middle'>
+	<h3>Como estas means:</h3> 
+	<INPUT TYPE="RADIO" id="A" name='c' checked>
+	 Where are you going?<BR></br>
+	<INPUT TYPE="RADIO" id="B" name='c'  >
+	How old are you?<BR></br>
+	<INPUT TYPE="RADIO" id="C" name='c' >
+	Good morning<BR></br>
+	<INPUT TYPE="RADIO" id="D" name='c' >
+	How are you?<BR></br>	
+	</FORM></center>
+	</br></br>
+</div>
+<div class="res1" id="r1">
+</br>
+	<div id="myProgress3">
+	<div id="myBar3"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br></br>
+	<a href='#' onclick="f('q2','r1')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br>
+</div>	
+<div class="q2" id="q2">
+</br>
+	<div id="myProgress3">
+	<div id="myBar3"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div>	
+	<a href='#' onclick="fn('A','q2','r2')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br></br>
+	<center><FORM method="POST" align='middle'>
+    <h3>Where are you from? </h3>
+	<h3>In Spanish this is translated to :</h3>
+	<INPUT TYPE="RADIO" id="A" NAME='cc' checked>
+	De donde eres<BR></br>
+	<INPUT TYPE="RADIO" id="B" NAME='cc'>
+	soy de<BR></br>
+	<INPUT TYPE="RADIO" id="C" NAME='cc'>
+	Me llamo<BR></br>
+  <INPUT TYPE="RADIO" id="D" NAME='cc'>
+  Estoy bien<BR></br>
+	
+	</FORM></center>
+	</br></br>
+</div>
+<div class="res1" id="r2">
+</br>
+	<div id="myProgress3">
+	<div id="myBar3"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br></br>
+	<a href='#' onclick="f('q3','r2')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br>
+</div>
+<div class="q2" id="q3">
+</br>
+	<div id="myProgress3">
+	<div id="myBar3"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div>		
+	<a href='#' onclick="fn('C','q3','r3')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br></br>
+	<center><FORM method="POST" align='middle'>
+    <h3>Cuantos anos tienes translates to :</h3>
+
+	<INPUT TYPE="RADIO" id="A" name='c' checked >Where is your home?<BR></br>
+  <INPUT TYPE="RADIO" id="B" name='c'>  When is your birthday?<BR></br>
+  <INPUT TYPE="RADIO" id="C"  name='c'>  How old are you?<BR></br>
+  <INPUT TYPE="RADIO" id="D" name='c'>  Nice to meet you!<BR></br>
+  
+  </FORM></center>
+	</br></br>
+</div>
+<div class="res1" id="r3">
+</br>
+<div id="myProgress3">
+	<div id="myBar3"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br></br>
+	<a href='#' onclick="f('q4','r3')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br>
+</div>
+<div class="q2" id="q4">
+</br>
+	<div id="myProgress3">
+	<div id="myBar3"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div>		
+	<a href='#' onclick="fn('C','q4','r4')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br></br>
+	<center><FORM method="POST" align='middle' >
+    <h3>Como se llama? translates to :</h3>
+
+  <INPUT TYPE="RADIO" id="A" NAME="cc" checked>
+  How are you?<BR></br>
+
+  <INPUT TYPE="RADIO" id="B" NAME="cc">
+  I speak Spanish.<BR></br>
+
+  <INPUT TYPE="RADIO" id="C" NAME="cc">
+  What is your name?<BR></br>
+
+  <INPUT TYPE="RADIO" id="D" NAME="cc">
+  My name is....<BR></br>
+
+  </FORM></center>
+  </br></br>
+</div>
+<div class="res1" id="r4">
+</br>
+	<div id="myProgress3">
+	<div id="myBar3"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br></br>
+	<a href='#' onclick="window.location.assign('ex3.html')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br>
+</div>
+</div>
+	<script>
+	var count=0;
+	
+	function fn(ans,curr,next)
+{
+	count+=10;
+	
+	var content=document.getElementsByClassName("res1");
+	document.getElementById(curr).style.display="none";
+	for(i=0;i<content.length;i++)
+	{
+		content[i].style.display="none";
+	}
+	var s=document.getElementById(next);
+	s.style.display="block";
+	s.style.backgroundColor="white";	
+	s.style.borderRadius="12px";
+	s.style.padding="22px";
+	//s.style.paddingBottom="29px";
+	
+	var x=document.createElement("img");
+	var y=document.createElement("h3");
+	var z=document.createElement("center");
+	if(document.getElementById(ans).checked)
+	{		
+		//won++;
+		x.src="gtick.png";
+		x.width="220";
+		x.height="220";		
+		x.alt="pic";
+		y.textContent="Correct!!";		
+	}
+	else
+	{
+		x.src="xmark.png";
+		x.width="220";
+		x.height="220";
+		y.textContent="Wrong :(";
+	}
+	
+	var w=s.children[1].children[0];
+	w.style.width=count+'em';
+	k="translate("+count+'em)';
+	w.children[0].style.transform=k;
+	
+	z.appendChild(x);
+	z.appendChild(y);
+	s.appendChild(z);
+	//count=count+2;
+}
+function f(name,q)
+{
+	var content=document.getElementsByClassName("q2");
+	document.getElementById(q).style.display="none";
+	for(i=0;i<content.length;i++)
+	{
+		content[i].style.display="none";
+	}
+	var s=document.getElementById(name);	
+	s.style.display="block";
+	s.style.backgroundColor="white";
+	s.style.borderRadius="12px";
+	s.style.padding="20px";
+	s.style.paddingBottom="29px";
+		
+	var w=s.children[1].children[0];
+	w.style.width=count+'em';
+	k="translate("+count+'em)';
+	w.children[0].style.transform=k;
+	
+}
+
+	</script>
+	
+	<audio id="audio1" src="correct.mp3" ></audio>
+	<audio id="audio2" src="wrong.mp3" ></audio>
+	</body>
+
+</html>

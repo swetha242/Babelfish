@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<style>
+h2{
+    text-shadow: 3px 3px 5px #99ccff;
+	color:#00264d;
+	font-style:italic;
+}
+</style>
+</head>
+<body id="exc1" onload="play()">
+<ul class="tabs1">
+	<li><a href="dashboard.html">Go back</a></li>
+	<li><a href="home.html">Log out</a></li>	
+	<li class="ti"><img src='babel.png'alt='nemo'/><img src="logo1.png" alt ="logo"></li>
+	</ul>
+<div class="ex1div">
+
+<div class="ex1" id="e1">
+</br>
+<div id="myProgress">
+  <div id="myBar"><img id="yo" src='babel1.png'alt='nemo'/></div>
+</div>
+	<center><h2>The Woman</h2></center>
+	<a href='#' onclick="f(event,'e2','audio2')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	<center><div class="flash"><img  id='h' src="woman.jpg" alt="hello" />
+	<p class="prop">La Mujer</p></div></center>	
+</div>
+<div class="ex1" id="e2">
+</br>
+	<div id="myProgress">
+	<div id="myBar"><img id="yo" src='babel1.png'alt='nemo'/></div>
+	</div>
+	<center><h2>The Man</h2></center></br>
+	<a href='#' onclick="f(event,'e3','audio3')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	<center><div class="flash"><img align="center" id='h' src="man.jpg" alt="hello" />
+	<p class="">El Hombre</p></center>
+</div>
+<div class="ex1" id="e3">
+	</br>
+	<div id="myProgress">
+  <div id="myBar"><img id="yo" src='babel1.png'alt='nemo'/></div>
+	</div>
+	<center><h2>The Girl</h2></center></br>
+	<a href='#' onclick="f(event,'e4','audio4')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	<center><div class="flash"><img  id='h' align="center" src="girl.jpg" alt="hello"/>
+	<p>La Chica</p></div></center>
+</div>
+<div class="ex1" id="e4">
+	</br>
+	<div id="myProgress">
+  <div id="myBar"><img id="yo" src='babel1.png'alt='nemo'/></div>
+</div>
+	<center><h2>The Boy</h2></center>
+	</br>
+	<a href='#' onclick="f(event,'e5','audio5')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	<center><div class="flash"><img  id='h'align="center"  src="boy.jpg" alt="hello"/>
+	<p>El Chico</p></div></center>
+</div>
+<div class="ex1" id="e5">
+	</br>
+	<div id="myProgress">
+	<div id="myBar"><img id="yo" src='babel1.png'alt='nemo'/></div>
+	</div>
+	<center><h2>Friend</h2></center>
+	</br>
+	<a href='#' onclick="f(event,'e6','audio6')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	<center><div class="flash"><img  id='h' src="friend.jpg" alt="hello"/>
+	<p>El Amigo</p></div></center>
+</div>
+<div class="ex1" id="e6">
+	</br>
+	<div id="myProgress">
+	<div id="myBar"><img id="yo" src='babel1.png'alt='nemo'/></div>
+	</div>
+	<center><h2>Short</h2></center>
+	</br>
+	<a href='#' onclick="f(event,'e7','audio7')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	<center><div class="flash"><img  id='h' src="short.jpg" alt="hello"/>
+	<p>Baja</p></div></center>
+</div>
+<div class="ex1" id="e7">
+	</br>
+	<div id="myProgress">
+	<div id="myBar"><img id="yo" src='babel1.png'alt='nemo'/></div>
+	</div>
+	<center><h2>Tall</h2></center>
+	</br>
+	<a href='#' onclick="f(event,'e8','audio8')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	<center><div class="flash"><img  id='h' src="tall.jpg" alt="hello"/>
+	<p>Alto</p></div></center>
+</div>
+<div class="ex1" id="e8">
+	</br>
+	<div id="myProgress">
+	<div id="myBar"><img id="yo" src='babel1.png'alt='nemo'/></div>
+	</div>
+	<center><h2>Old</h2></center></br>
+	<a href='#' onclick="f(event,'e9','audio9')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	<center><div class="flash"><img  id='h' src="oldman.jpg" alt="hello"/>
+	<p>Viejo</p></div></center>
+</div>
+<div class="ex1" id="e9">
+	</br>
+	<div id="myProgress">
+	<div id="myBar"><img id="yo" src='babel1.png'alt='nemo'/></div>
+	</div>
+	<center><h2>Young</h2></center></br>
+	<a href='quiz3.html' onclick="location.assign('quiz3.html')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	<center><div class="flash"><img  id='h' src="young.jpg" alt="hello"/>
+	<p>Joven</p></div></center>
+</div>
+
+</div>
+<audio id="audio1" src="la_mujer.mp3" ></audio>
+<audio id="audio2" src="el_hombre.mp3" ></audio>
+<audio id="audio3" src="la_chica.mp3" ></audio>
+<audio id="audio4" src="el_chico.mp3" ></audio>
+<audio id="audio5" src="el_amigo.mp3" ></audio>
+<audio id="audio6" src="baja.mp3" ></audio>
+<audio id="audio7" src="alto.mp3" ></audio>
+<audio id="audio8" src="viejo.mp3" ></audio>
+<audio id="audio9" src="joven.mp3" ></audio>
+
+<script>
+var count=5;
+window.play=function(){document.getElementById('audio1').play();}
+function f(evt,name,x)
+{
+	var content=document.getElementsByClassName("ex1");
+	count=count+5;
+	for(var i =0;i<content.length;i++)
+	{
+	content[i].style.display="none";
+	}
+	
+	var s=document.getElementById(name);
+	s.style.display="block";
+	s.style.backgroundColor="white";
+	s.style.borderRadius="12px";
+	//s.style.padding="20px";
+	//s.style.paddingBottom="29px";
+	document.getElementById(x).play();
+	
+	var w=s.children[1].children[0];
+	w.style.width=count+'em';
+	k="translate("+count+'em)';
+	w.children[0].setAttribute("id","yonew");
+	w.children[0].style.transform=k;
+	
+}
+function play(x)
+{
+	document.getElementById(x).play();
+}
+</script>
+
+</body>
+</html>

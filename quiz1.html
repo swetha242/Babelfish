@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<style>
+h3,h4 {
+    text-shadow: 3px 3px 5px #99ccff;
+	color:#00264d;
+	font-style:italic;
+}
+</style>
+</head>
+<body id="ques1" onload="play()">
+<ul class="tabs1">
+	<li><a href="dashboard.html">Go back</a></li>
+	<li><a href="home.html">Log out</a></li>	
+	<li class="ti"><img src='babel.png'alt='nemo'/><img src="logo1.png" alt ="logo"></li>
+</ul>
+
+<div class="q1div">
+
+<div class="q1" id="q1">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div>
+	<center><h3>Type the word being heard</h3>	</center>
+	<center><div class="flash1" align="middle"><img  id='pic' src="hello.jpg" alt="hello" onload="play('audio1')" />
+	</br></br>
+	</div></center>
+	<center><input type ="text" id="a1" oninput="check(this,'b1')"/></center></br>
+	<center><button class="btn" id='b1'onclick="fn('r1','a1','q1')" disabled>Next</button></center>
+	</br></br>
+
+</div>
+<div class="res" id="r1">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br></br>
+	<a href='#' onclick="f('q2','audio2','r1')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br>
+</div>	
+<div class="q1" id="q2">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div>
+	<center><h3 align="middle">Type the word being heard</h3></center>
+<center><div align="middle" class="flash1"><img  id='pic' src="gm.jpg" alt="hello" />	
+	</br></br></div></center>
+	<center><input type ="text" id="a2" oninput="check(this,'b2')"/></center></br>
+	<center><button class='btn' id='b2' onclick="fn('r2','a2','q2')" disabled>Next</button></center>
+	</br></br>
+</div>	
+<div class="res" id="r2">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br></br>
+	<a href='#' onclick="f('q3','audio3','r2')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br>
+</div>	
+<div class="q1" id="q3">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div>
+	<center><h3 align="middle">Type the word being heard</h3><center>
+	<center><div align="middle" class="flash1"><img  id='pic' src="tq.jpeg" alt="hello" />
+	</br></br></div><center></br>
+	<center><input type ="text" id="a3" oninput="check(this,'b3')"/></center></br>
+	<center><button id='b3' class='btn'onclick="fn('r3','a3','q3')" disabled>Next</button></center>
+	</br></br>
+</div>	
+<div class="res" id="r3">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br></br>
+	<a href='#' onclick="f('q4','audio4','r3')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br>
+</div>	
+<div class="q1" id="q4">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div>
+	<center><h3 align="middle">Type the word being heard</h3></center>	
+	<center><div align="middle" class="flash1"><img  id='pic' src="hello1.jpg" alt="hello" />
+	</br></br></div></center></br>
+	<center><input type ="text" id="a4" oninput="check(this,'b4')"/></center></br>
+	<center><button  class='btn' id='b4' onclick="fn('r4','a4','q4')">Next</button></center>
+	</br></br>
+</div>	
+<div class="res" id="r4">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br></br>
+	<a href='#' onclick="f('q5','audio5','r4')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br>
+</div>	
+<div class="q1" id="q5">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div>
+	<center><h3 align="middle">Type the word being heard</h3></center>
+	<center><div align="middle" class="flash1"><img  id='pic' src="goodbye.jpg" alt="hello" />	
+	</br></br></div></center></br>
+	<center><input type ="text" id="a5" oninput="check(this,'b5')"/></center></br>
+	<center><button  class='btn' id='b5' onclick="fn('r5','a5','q5')">Next</button></center>
+	</br></br>
+</div>	
+<div class="res" id="r5">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br></br>
+	<a href='#' onclick="f1('r5')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br>
+</div>	
+<div id="results">
+</br>
+	<a href='#' onclick="window.location.assign('ex2.html')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br>
+</div>	
+</div>	
+	
+<audio id="audio1" src="hola.mp3" ></audio>
+<audio id="audio2" src="buenos_dias.mp3" ></audio>
+<audio id="audio3" src="gracias.mp3" ></audio>
+<audio id="audio4" src="hasta_pronto.mp3" ></audio>
+<audio id="audio5" src="adios.mp3" ></audio>
+<script>
+var arr=["hola","Hola","Buenos dias","buenos dias","gracias","Gracias","hasta pronto","Hasta pronto","Adios","adios"];
+var count=0,won=0,count1=0,count2=0;
+window.play=function(){document.getElementById('audio1').play();}
+
+function check(e,btn)
+{
+var bt;
+bt=document.getElementById(btn);
+bt.disabled=false;
+bt.style.backgroundColor="#1e90ff";
+if(e.value=="")
+	{	
+		bt.disabled=true;
+		bt.style.backgroundColor="#80bfff";
+	}
+}
+function fn(r,txt,q)
+{
+	count1+=10;
+	count2+=10;
+	var content=document.getElementsByClassName("res");
+	document.getElementById(q).style.display="none";
+	for(i=0;i<content.length;i++)
+	{
+		content[i].style.display="none";
+	}
+	var s=document.getElementById(r);
+	s.style.display="block";
+	s.style.backgroundColor="white";	
+	s.style.borderRadius="12px";
+	s.style.padding="20px";
+	//s.style.paddingBottom="29px";
+	var str=document.getElementById(txt).value;
+	var x=document.createElement("img");
+	var y=document.createElement("h4");
+	var z=document.createElement("center");
+	if((str==arr[count])||(str==arr[count+1]))
+	{		
+		won++;
+		x.src="happy.gif";
+		x.width="220";
+		x.height="220";		
+		x.alt="pic";
+		y.textContent="Correct!!";		
+	}
+	else
+	{
+		x.src="sad.jpg";
+		x.width="220";
+		x.height="220";
+		y.textContent="Wrong :(";
+	}
+	y.style.fontFamily="Verdana";
+	var w=s.children[1].children[0];
+	w.style.width=count1+'em';
+	k="translate("+count2+'em)';
+	w.children[0].style.transform=k;
+	
+	z.appendChild(x);
+	z.appendChild(y);
+	s.appendChild(z);
+	count=count+2;
+}
+function f(name,mu,q)
+{
+	var content=document.getElementsByClassName("q1");
+	document.getElementById(q).style.display="none";
+	for(i=0;i<content.length;i++)
+	{
+		content[i].style.display="none";
+	}
+	var s=document.getElementById(name);
+	s.style.display="block";
+	s.style.backgroundColor="white";
+	s.style.borderRadius="12px";
+	s.style.padding="20px";
+	s.style.paddingBottom="29px";
+	document.getElementById(mu).play();		
+	
+	var w=s.children[1].children[0];
+	w.style.width=count1+'em';
+	k="translate("+count2+'em)';
+	w.children[0].style.transform=k;
+	
+}
+
+	function play(x)
+{
+	document.getElementById(x).play();
+}
+function f1(r)
+{
+	var r=document.getElementById(r);
+	r.style.display="none";
+	var s=document.getElementById("results");
+	s.style.display="block";
+	s.style.backgroundColor="white";	
+	s.style.borderRadius="12px";
+	s.style.padding="20px";
+	var x=document.createElement("img");
+	var y=document.createElement("h4");
+	var z=document.createElement("center");
+	if(won>=4)
+	{
+		x.src="happy.gif";
+		x.width="250";
+		x.height="250";
+		y.innerHTML="You have answered "+won+" out of 5 questions correctly!!";
+	}
+	else
+	{
+		x.src="sad.jpg";
+		x.width="250";
+		x.height="250";
+		y.innerHTML="You have answered "+won+" out of 5 questions correctly";
+	}
+	z.appendChild(x);
+	z.appendChild(y);
+	s.appendChild(z);
+}
+</script>
+</body>
+</html>

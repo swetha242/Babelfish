@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<style>
+h3,h4{
+    text-shadow: 3px 3px 5px #99ccff;
+	color:#00264d;
+	font-style:italic;
+}
+</style>
+</head>
+<body id="finalq" onload="pl()">
+<ul class="tabs1">
+	<li><a href="dashboard.html">Go back</a></li>
+	<li><a href="home.html">Log out</a></li>	
+	<li class="ti"><img src='babel.png'alt='nemo'/><img src="logo1.png" alt ="logo"></li>
+</ul>
+
+<div class="finalq">
+
+<div class="final" id="q1">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div>
+	<h3 align="middle">Type the word being heard</h2>	
+	<div class="flash1" align="middle"><img  id='pic' src="hello.jpg" alt="hello" />
+	</br></br></br>
+	</div>
+	<center><input type ="text" id="a1" oninput="check(this,'b1')"/></center></br>
+	<center><button class="btn" id='b1'onclick="fn('r1','a1','q1')" disabled>Next</button></center>
+	</br></br>
+</div>
+<div class="res" id="r1">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br></br>
+	<a href='#' onclick="f('q2','r1','audio2')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br>
+</div>	
+<div class="final" id="q2">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div>
+	<h3 align="middle">Type the word being heard</h2>	
+	<div class="flash1" align="middle"><img  id='pic' src="gm.jpg" alt="hello" />
+	</br></br></br>
+	</div>
+	<center><input type ="text" id="a2" oninput="check(this,'b2')"/></center></br>
+	<center><button class="btn" id='b2'onclick="fn('r2','a2','q2')" disabled>Next</button></center>
+	</br></br>
+</div>
+<div class="res" id="r2">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br></br>
+	<a href='#' onclick="f('q3','r2','audio3')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br>
+</div>	
+<div class="final" id="q3">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div>
+	<h3 align="middle">Type the word being heard</h2>	
+	<div class="flash1" align="middle"><img  id='pic' src="tq.jpeg" alt="hello" />
+	</br></br></br>
+	</div>
+	<center><input type ="text" id="a3" oninput="check(this,'b3')"/></center></br>
+	<center><button class="btn" id='b3'onclick="fn('r3','a3','q3')" disabled>Next</button></center>
+	</br></br>
+</div>
+<div class="res" id="r3">
+</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br></br>
+	<a href='#' onclick="f('q4','r3')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	</br></br>
+</div>	
+<div class="final" id="q4">
+	</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br>
+	<a href='#' onclick="f('q5','q4')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+<p>Drag the correct answer to the respecive div:</p>	
+	
+	<div class="drop" id="drop1" ondrop="drop(event,'drag2')" ondragover="allowDrop(event)" ><center>Nice to meet you</center></div>
+	<div class="drop" id="drop2" ondrop="drop(event,'drag3')" ondragover="allowDrop(event)" ><center>I'm fine</center></div>
+	<div class="drop" id="drop3" ondrop="drop(event,'drag1')" ondragover="allowDrop(event)" ><center>What's your name?</center></div>
+	<div class="drag" id="drag1" draggable="true" ondragstart="drag(event)"><center>Como te Illamas?</center></div>
+	<div class="drag" id="drag2" draggable="true" ondragstart="drag(event)"><center>Encantado</center></div>
+	<div class="drag" id="drag3" draggable="true" ondragstart="drag(event)"><center>Estoy bien</center></div>
+
+</div>
+<div class="final" id="q5">
+	</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br></br>
+	<a href='#' onclick="f('q6','q5')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+<p>Drag the correct answer to the respecive div:</p>	
+	
+	<div class="drop" id="drop1" ondrop="drop(event,'drag3')" ondragover="allowDrop(event)" ><center>My name is Rachel</center></div>
+	<div class="drop" id="drop2" ondrop="drop(event,'drag1')" ondragover="allowDrop(event)" ><center>Where are you from?</center></div>
+	<div class="drop" id="drop3" ondrop="drop(event,'drag2')" ondragover="allowDrop(event)" ><center>How old are you?</center></div>
+	<div class="drag" id="drag1" draggable="true" ondragstart="drag(event)"><center>De donde eres?</center></div>
+	<div class="drag" id="drag2" draggable="true" ondragstart="drag(event)"><center>Cuantos Anos Tienes?</center></div>
+	<div class="drag" id="drag3" draggable="true" ondragstart="drag(event)"><center>Me Ilamo Rachel</center></div>
+
+</div>
+<div class="final" id="q6">
+	</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br>
+	<a href='#' onclick="f('q7','q6')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	<p>Match the following:</p>
+	<div id="match">
+	<div class="from1">
+	<div class="from" id="from1" onclick="match(this)"><p>See you soon!</p></div>
+	<div class="from" id="from2" onclick="match(this)"><p>How are you?</p></div>
+	<div class="from" id="from3" onclick="match(this)"><p>Goodbye!</p></div>
+	<div class="from" id="from4" onclick="match(this)"><p>Goodnight</p></div>
+	</div>
+	<div class="match">
+	<canvas class="myCanvas" id="canvas0" width="200" height="200"></canvas>
+	</div>
+	<div class="to1">
+	<div class="to" id="to1" onclick="match(this,125)"><p>Adios</p></div>
+	<div class="to" id="to2" onclick="match(this,75)"><p>&iquestc&oacutemo est&aacutes?</p></div>
+	<div class="to" id="to3" onclick="match(this,175)"><p>Buenos noches</p></div>
+	<div class="to" id="to4" onclick="match(this,25)"><p>&iexclHasta pronto!</p></div>
+	</div>
+	</div>
+</div>
+<div class="final" id="q7">
+	</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br>
+	<a href='#' onclick="f('q8','q7')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	<p>Match the following:</p>
+	<div id="match">
+	<div class="from1">
+	<div class="from" id="from1" onclick="match(this)">The Woman</div>
+	<div class="from" id="from2" onclick="match(this)">The Boy</div>
+	<div class="from" id="from3" onclick="match(this)">Friend</div>
+	<div class="from" id="from4" onclick="match(this)">Short</div>
+	</div>
+	<div class="match">
+	<canvas class="myCanvas" id="canvas1" width="200" height="200"></canvas>
+	</div>
+	<div class="to1">
+	<div class="to" id="to1" onclick="match(this,75)">El Chico</div>
+	<div class="to" id="to2" onclick="match(this,175)">Baja</div>
+	<div class="to" id="to3" onclick="match(this,25)">La Mujer</div>
+	<div class="to" id="to4" onclick="match(this,125)">El Amigo</div>
+	</div>
+	</div>
+</div>
+<div class="final" id="q8">
+	</br>
+	<div id="myProgress1">
+	<div id="myBar1"><img id="yo1" src='babel1.png'alt='nemo'/></div>
+	</div></br>
+	<a href='#' onclick="window.location.assign('dashboard.html')"><img id='arr' src="arrow1.png" alt="arrow"/></a>
+	<p>Match the following:</p>
+	<div id="match">
+	<div class="from1">
+	<div class="from" id="from1" onclick="match(this)">Young</div>
+	<div class="from" id="from2" onclick="match(this)">Tall</div>
+	<div class="from" id="from3" onclick="match(this)">The Man</div>
+	<div class="from" id="from4" onclick="match(this)">Old</div>
+	</div>
+	<div class="match">
+	<canvas class="myCanvas" id="canvas2" width="200" height="200"></canvas>
+	</div>
+	<div class="to1">
+	<div class="to" id="to1" onclick="match(this,125)">El Hombre</div>
+	<div class="to" id="to2" onclick="match(this,25)">Joven</div>
+	<div class="to" id="to3" onclick="match(this,175)">Viejo</div>
+	<div class="to" id="to4" onclick="match(this,75)">Alto</div>
+	</div>
+	</div>
+</div>
+</div>
+
+<audio id="audio1" src="hola.mp3" ></audio>
+<audio id="audio2" src="buenos_dias.mp3" ></audio>
+<audio id="audio3" src="gracias.mp3" ></audio>
+
+<script type="text/javascript">
+var arr=['hola','Hola','buenos dias',"Buenos dias","gracias","Gracias"];
+var count1=count2=count=won=0;
+var flag1,flag2,fr,to;
+var ct=0;
+var arr1=[25,75,125,175];
+var arr2=[25,75,125,175];
+window.pl=function(){document.getElementById('audio1').play();}
+function match(th,ans)
+{	
+	if(th.className=="from")
+	{
+	if(th.id=="from1")
+		fr=25;
+	else if(th.id=="from2")
+		fr=75;
+	else if(th.id=="from3")
+		fr=125;
+	else
+		fr=175;
+	
+	}
+	else
+	{
+	flag1=0;
+	flag2=0;
+	if(th.id=="to1")
+		to=25;
+	else if(th.id=="to2")
+		to=75;
+	else if(th.id=="to3")
+		to=125;
+	else
+		to=175;
+	
+	var c = document.getElementById("canvas"+ct);
+	var ctx = c.getContext("2d");
+	for(i=0;i<arr1.length;i++)
+	{
+		if(fr==arr1[i])
+			flag1=1;
+	}
+	for(i=0;i<arr2.length;i++)
+	{
+		if(to==arr2[i])
+			flag2=1;
+	}
+	
+	
+	if((fr==25 || fr==75 || fr==125 || fr==175)&&(flag1==1)&&(flag2==1))
+	{	
+	
+	ctx.moveTo(0,fr);
+	ctx.lineTo(200,to);
+	ctx.stroke();
+	if(fr==ans)
+		th.style.backgroundColor="#66ff66";
+	else
+		th.style.backgroundColor="#ff8080";
+	
+	for(i=0;i<arr2.length;i++)
+	{
+		if(to==arr2[i])
+			break;
+	}
+	delete arr2[i];
+	for(i=0;i<arr1.length;i++)
+	{
+		if(fr==arr1[i])
+			break;
+	}
+	delete arr1[i];
+	}
+	}
+}
+
+function allowDrop(ev)
+ {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev,ans)
+ {
+    ev.preventDefault();
+	ev.target.innerHTML="";
+    var data = ev.dataTransfer.getData("text");
+	var z=document.getElementById(data);    
+	if(data==ans)
+		z.style.backgroundColor="#66ff66";
+	else
+		z.style.backgroundColor="#ff8080";
+	ev.target.appendChild(z);	
+	z.id="change";
+	ev.target.ondragover="false";
+}
+function check(e,btn)
+{
+var bt;
+bt=document.getElementById(btn);
+bt.disabled=false;
+bt.style.backgroundColor="#1e90ff";
+if(e.value=="")
+	{	
+		bt.disabled=true;
+		bt.style.backgroundColor="#80bfff";
+	}
+}
+function fn(r,txt,q)
+{
+	count1+=6;
+	count2+=6;
+	var content=document.getElementsByClassName("res");
+	document.getElementById(q).style.display="none";
+	for(i=0;i<content.length;i++)
+	{
+		content[i].style.display="none";
+	}
+	var s=document.getElementById(r);
+	s.style.display="block";
+	s.style.backgroundColor="white";	
+	s.style.borderRadius="12px";
+	s.style.padding="22px";
+	//s.style.paddingBottom="29px";
+	var str=document.getElementById(txt).value;
+	var x=document.createElement("img");
+	var y=document.createElement("h4");
+	var z=document.createElement("center");
+	if((str==arr[count])||(str==arr[count+1]))
+	{		
+		won++;
+		x.src="gtick.png";
+		x.width="220";
+		x.height="220";		
+		x.alt="pic";
+		y.textContent="Correct!!";		
+	}
+	else
+	{
+		x.src="xmark.png";
+		x.width="220";
+		x.height="220";
+		y.textContent="Wrong :(";
+	}
+	
+	var w=s.children[1].children[0];
+	w.style.width=count1+'em';
+	k="translate("+count2+'em)';
+	w.children[0].style.transform=k;
+	
+	z.appendChild(x);
+	z.appendChild(y);
+	s.appendChild(z);
+	count=count+2;
+}
+function f(name,q,mu)
+{
+	var content=document.getElementsByClassName("final");
+	document.getElementById(q).style.display="none";
+	for(i=0;i<content.length;i++)
+	{
+		content[i].style.display="none";
+	}
+	var s=document.getElementById(name);
+	if((name=='q7')||(name=='q8'))
+		ct=ct+1;
+	if(ct>0)
+	{
+		flag1=flag2=fr=to=0;
+		arr1=[25,75,125,175];
+		arr2=[25,75,125,175];
+	}
+	s.style.display="block";
+	s.style.backgroundColor="white";
+	s.style.borderRadius="12px";
+	s.style.padding="20px";
+	s.style.paddingBottom="29px";
+	if(count<=4)
+	document.getElementById(mu).play();		
+	else
+	{
+		count1+=6;
+		count2+=6;
+	}
+	
+	var w=s.children[1].children[0];
+	w.style.width=count1+'em';
+	k="translate("+count2+'em)';
+	w.children[0].style.transform=k;
+	
+}
+
+	function pl(x)
+{
+	document.getElementById(x).play();
+}
+</script>
+</body>
+</html>

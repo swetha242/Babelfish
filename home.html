@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	</head>
+	
+	<body>
+<script>
+
+var i=1;
+	//for background
+	document.body.style.backgroundImage = 'url(paris.jpg)';
+	
+	var bgImg = setInterval(myBgImg,6000);
+	
+function myBgImg() {
+if ( i == 0 ) {
+
+ document.body.style.backgroundImage = 'url(paris.jpg)';
+ document.body.style.transitionTimingFunction = "ease-in-out";
+	}
+	if ( i == 1 ) {
+
+ document.body.style.backgroundImage = 'url(spain.jpg)';
+ document.body.style.transitionTimingFunction = "ease-in-out";
+	}
+	if ( i == 2 ) {
+ document.body.style.backgroundImage = 'url(london.jpg)';
+	}
+	if ( i == 3 ) {
+	 document.body.style.backgroundImage = 'url(delhi.jpg)';
+	}
+	if ( i == 4 ) {
+	 document.body.style.backgroundImage = 'url(bengal.jpg)';
+	}
+	if ( i == 5 ) {
+	 document.body.style.backgroundImage = 'url(mysore.jpg)';
+	}
+
+i++;
+	if ( i == 6){
+		i=0;
+	}
+	
+}
+
+//background end
+
+// new audio section
+
+function play() {
+// plays the audio of the language of the place being displayed in the background
+
+
+var audionum = "audio"+ i ;
+audio = document.getElementById(audionum);
+audio.play();
+
+
+	
+}
+//audio
+
+
+</script>
+		
+		<p class="ti"><img src='babel.png'alt='nemo'/><img src="logo1.png" alt ="logo"><p>	
+	<div class = "cont">
+	<div style="background-color:#le90ff;border-radius=8px;">
+	</br>
+	
+	<h1> Why BabelFish?</h1>
+	<p>In The Hitchhiker's Guide to the Galaxy, a Bable Fish is a small, leech-like, yellow fish, that feeds on the brainwaves entering a person's ear and excretes out this information in a language that is understandable to the person who has the Babel Fish residing in their ear canal.<br> <br>While the Babel Fish is yet some far off dream, we hope to be able to bring this kind of power of understanding to people who have no time to enter a language class, or those who do not wish to go through all the motions of learning a new language<br>We wish to be able to teach people language that they will actually use in their daily lives.<br><br>Begin your journey, and remember, Don't Panic!</p>
+	<button type="submit" class="enter" onclick="location.href='aboutus.html'">Enter</button>
+	</div>
+	
+	<!-- Audio clips assignment -->	
+		<input type="button" class="welcome" value="Welcome"  onclick="play()">
+<audio id="audio1" src="bienvenue.mp3" ></audio>
+<audio id="audio2" src="bienvenida.mp3" ></audio>
+<audio id="audio3" src="welcometouse.mp3" ></audio>
+<audio id="audio4" src="swagat.mp3" ></audio>
+<audio id="audio5" src="bengali.mp3" ></audio>
+<audio id="audio0" src="kannada.mp3" ></audio>
+
+	<button type="submit" class="login" onclick="location.assign('login.php')">Log in/ Sign up</button>
+	</div>
+	</body> 
+</html>
